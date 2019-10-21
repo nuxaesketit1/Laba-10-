@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int n;
+	double sum = 1, p = 1, a;
+
+	cout << "Введите вещественное число A : ";
+	cin >> a;
+	cout << endl;
+
+	cout << "Введите целое число N (N > 0) : ";
+	cin >> n;
+	cout << endl;
+
+	for (int i = 1; i < (n + 1); i++) {
+
+		p = -1*p*a;
+
+		sum += p;
+
+	}
+
+	cout << "Искомая сумма : " << sum << endl;
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
