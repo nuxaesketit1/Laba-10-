@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	do {
+
+		int n;
+		double pr = 1;
+
+		cout << "Введите целое число N : ";
+		cin >> n;
+		cout << endl;
+
+		if (n > 0) {
+
+			for (int i = 1; i < (n + 1); i++) {
+
+				pr = pr * (i + 10) / 10;
+
+			}
+
+			cout << "Произведение равно : " << pr << endl;
+
+			break;
+
+		}
+		else {
+
+			cout << "Повторите ввод данных!" << endl;
+
+		}
+
+	} while (true);
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
